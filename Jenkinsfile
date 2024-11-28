@@ -35,4 +35,9 @@ pipeline {
             }
         }
     }
+    post {
+        alwaays {
+            junit 'test-results/junit.xml'
+        }
+    }
 }
